@@ -58,9 +58,13 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   transition: background-color 0.3s ease-out;
+  border:none;
+  text-align: center;
+  padding: 1rem;
 }
 .btn:hover {
   background-color: var(--verde-oscuro);
+  cursor: pointer;
 }
 
 /* HEADER Y NAVEGACION */
@@ -86,7 +90,7 @@ h3 {
 .nav-principal a {
   display: block;
   font-size: 2rem;
-  transition: transform (0.3);
+  transition: transform (.5);
 }
 .nav-principal a:hover{
 transform: scale(1.2);
@@ -349,4 +353,44 @@ column-gap: 4rem;
 }
 .img-galeria:hover{
  transform: scale(1.1);
+}
+
+/*CONTACTO*/
+
+.formulario{
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.formulario fieldset{
+ border: 1px solid var(--black);
+ margin-bottom: 2rem;
+}
+.formulario fieldset legend{
+  text-align: center;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+  padding: .5rem;
+  background-color: #005485;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.campo{
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.campo label{
+  flex-basis: 10rem;
+}
+.campo input:not([type='radio']),
+textarea,select{
+  flex: 1;
+  padding: .4rem;
+  border: 1px solid var(--gris);
+}
+
+input[type='submit']{
+  margin: 0 auto;
 }
